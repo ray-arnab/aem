@@ -9,7 +9,7 @@ The purpose is to explore and demonstrate certain development strategies involvi
 
 - Project setup for multi-project / multi tenant situation
 
-	- company-commons : project to hold common funcitonality
+	- aem.commons : project to hold common funcitonality
 
 		- basic components
 
@@ -17,7 +17,7 @@ The purpose is to explore and demonstrate certain development strategies involvi
 
 		- configurations that apply on whole instance (eg: Externalizer, ServiceUserMapper, JcrResourceResolverFactory)
 
-	- company-intranet : holds project specific funcitonality for a given site/brand
+	- aem.intranet : holds project specific funcitonality for a given site/brand (say, company-intranet)
 
 		- specialized page templates
 
@@ -72,13 +72,13 @@ The purpose is to explore and demonstrate certain development strategies involvi
 	
 	/apps/company-commons/components/structure/page/tab_SEO
 
-		- whether page is excluded in xml sitemap
+		1. whether page is excluded in xml sitemap
 
-		- meta opengraph props that should apply on page
+		2. meta opengraph props that should apply on page
 
-		- meta twitter props that should apply on page
+		3. meta twitter props that should apply on page
 
-		- meta robots props that shuld apply on page
+		4. meta robots props that shuld apply on page
 		
 
 	- Corresponding models and sightly to inject markup
@@ -87,11 +87,11 @@ The purpose is to explore and demonstrate certain development strategies involvi
 	
 	- Usage in company-intranet
 
-		- Configurations : /apps/company-intranet/config.dev/com.company.aem.commons.core.config.impl.SEO...	
+		1. Configurations : /apps/company-intranet/config.dev/com.company.aem.commons.core.config.impl.SEO...	
 
-		- Page dialog: /apps/company-intranet/components/pages/base-page/dialog/items/tabs/items/seo
+		2. Page dialog: /apps/company-intranet/components/pages/base-page/dialog/items/tabs/items/seo
 
-		- Includes: /apps/company-intranet/components/pages/base-page/base-page.html includes /apps/company-commons/utils/seo/meta.html
+		3. Includes: /apps/company-intranet/components/pages/base-page/base-page.html includes /apps/company-commons/utils/seo/meta.html
 		
 		
 	- XML Sitemap generator (using ACS AEM Commons)

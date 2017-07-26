@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-06-24T19:50:46.801+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2017-06-24T19:50:46.819+01:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/company-intranet/templates/category-page"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Products"
+        sling:resourceType="company-intranet/components/pages/category-page">
+        <cq:LiveSyncConfig
+            cq:excludedPaths="[]"
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/company-intranet/language-masters/en/products"
+            cq:rolloutConfigs="[]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+</jcr:root>

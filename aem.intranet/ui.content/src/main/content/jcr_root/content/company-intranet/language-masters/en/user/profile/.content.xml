@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cugEnabled="true"
+        cq:cugLoginPage="/content/company-intranet/language-masters/en/user/login.html"
+        cq:cugPrincipals="company-cug"
+        cq:lastModified="{Date}2017-06-29T16:20:04.415+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-06-29T16:19:07.500+01:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/company-intranet/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Profile"
+        jcr:uuid="e67c7684-8e70-4eac-9a11-e1f380fa2a94"
+        sling:resourceType="company-intranet/components/pages/content-page">
+        <image
+            jcr:lastModified="{Date}2017-06-29T16:20:04.415+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+    <profile1/>
+    <profile2/>
+</jcr:root>

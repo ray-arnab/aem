@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-26T15:25:00.295+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-07-26T15:25:03.811+01:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastRolledout="{Date}2017-07-26T15:25:00.304+01:00"
+        cq:lastRolledoutBy="admin"
+        cq:propertyInheritanceCancelled="[seo.meta.robots.content,seo.meta.twitter.card,seo.meta.og.type,seo.meta.twitter.site,seo.meta.og.site,seo.meta.og.title,seo.meta.twitter.title,seo.xmlsitemap.choice]"
+        cq:siteOwner=""
+        cq:template="/apps/company-intranet/templates/base-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveSync,cq:PropertyLiveSyncCancelled,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Intranet US"
+        jcr:uuid="977d0b39-3229-43d6-8337-9dc70d774ace"
+        sling:resourceType="company-intranet/components/pages/base-page"
+        seo.meta.og.site="Intranet US"
+        seo.meta.og.title="Title for OG"
+        seo.meta.og.type="website"
+        seo.meta.robots.content="index, follow"
+        seo.meta.twitter.card="summary"
+        seo.meta.twitter.site="@IntranetUS"
+        seo.meta.twitter.title="Title for Twitter"
+        seo.xmlsitemap.choice="include"
+        seo.xmlsitemap.exclude="true"
+        seo.xmlsitemap.frequency="daily"
+        seo.xmlsitemap.priority="0.5">
+        <image
+            cq:lastRolledout="{Date}2017-07-26T15:25:00.302+01:00"
+            cq:lastRolledoutBy="admin"
+            jcr:lastModified="{Date}2017-07-26T15:25:00.291+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+        <cq:LiveSyncConfig
+            cq:excludedPaths="[]"
+            cq:isDeep="{Boolean}false"
+            cq:master="/content/company-intranet/language-masters"
+            cq:rolloutConfigs="[]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+    <en/>
+</jcr:root>

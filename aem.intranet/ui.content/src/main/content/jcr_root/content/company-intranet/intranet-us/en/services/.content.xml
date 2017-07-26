@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-20T13:52:30.101+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2017-06-24T19:27:19.369+01:00"
+        cq:lastRolledoutBy="admin"
+        cq:propertyInheritanceCancelled="[seo.meta.twitter.title]"
+        cq:template="/apps/company-intranet/templates/category-page"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync,cq:PropertyLiveSyncCancelled]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Services"
+        sling:resourceType="company-intranet/components/pages/category-page"
+        seo.meta.twitter.title="Customized">
+        <cq:LiveSyncConfig
+            cq:excludedPaths="[]"
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/company-intranet/language-masters/en/services"
+            cq:rolloutConfigs="[]"
+            jcr:primaryType="cq:LiveCopy"/>
+        <image
+            jcr:lastModified="{Date}2017-07-20T13:52:30.098+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+</jcr:root>

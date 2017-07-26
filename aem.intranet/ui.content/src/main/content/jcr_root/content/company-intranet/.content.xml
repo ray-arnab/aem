@@ -4,14 +4,37 @@
     <jcr:content
         cq:designPath="/etc/designs/company-intranet"
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2017-06-23T21:55:38.663+01:00"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="Company Intranet"
-        sling:redirect="{Boolean}true"
+        sling:redirect="true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
-        redirectTarget="/content/company-intranet/en">
-        <image jcr:primaryType="nt:unstructured">
-            <file/>
-        </image>
+        redirectTarget="/content/company-intranet/language-masters/en">
+        <image
+            jcr:lastModified="{Date}2017-06-23T21:55:38.656+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Decimal}479"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Decimal}768"/>
+                <desktop
+                    jcr:primaryType="nt:unstructured"
+                    title="Desktop"
+                    width="{Decimal}1200"/>
+            </breakpoints>
+        </cq:responsive>
     </jcr:content>
+    <language-masters/>
+    <intranet-fr/>
+    <intranet-us/>
 </jcr:root>

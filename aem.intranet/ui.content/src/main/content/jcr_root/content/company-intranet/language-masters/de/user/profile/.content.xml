@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-06-29T16:19:17.730+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2017-06-29T16:19:17.762+01:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/company-intranet/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Profile"
+        jcr:uuid="4e9e99a6-ea8c-4e46-8578-3bb11680a651"
+        sling:resourceType="company-intranet/components/pages/content-page"/>
+    <profile1/>
+    <profile2/>
+</jcr:root>

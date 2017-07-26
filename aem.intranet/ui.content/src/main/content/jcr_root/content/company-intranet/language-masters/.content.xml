@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-26T15:24:51.960+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-07-26T15:24:54.481+01:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/company-intranet/templates/base-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Language Masters"
+        jcr:uuid="04c9a2df-0938-45b9-921f-47cfea530683"
+        sling:resourceType="company-intranet/components/pages/base-page"
+        seo.xmlsitemap.exclude="true"
+        seo.xmlsitemap.frequency="daily"
+        seo.xmlsitemap.priority="0.5">
+        <cq:BlueprintSyncConfig
+            cq:rolloutConfigs="[/etc/msm/rolloutconfigs/default]"
+            jcr:primaryType="cq:BlueprintSyncConfig"/>
+        <image
+            jcr:lastModified="{Date}2017-07-26T15:24:51.949+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+    <en/>
+    <de/>
+    <fr/>
+</jcr:root>

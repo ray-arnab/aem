@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-06-29T16:14:35.845+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2017-06-29T16:14:35.850+01:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/company-intranet/templates/category-page"
+        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="User"
+        sling:resourceType="company-intranet/components/pages/category-page">
+        <image
+            cq:lastRolledout="{Date}2017-06-29T16:14:35.849+01:00"
+            cq:lastRolledoutBy="admin"
+            jcr:lastModified="{Date}2017-06-29T16:14:23.751+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+    <login/>
+    <profile/>
+</jcr:root>

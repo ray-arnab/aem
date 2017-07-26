@@ -2,4 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/content/company-intranet"/>
     <filter root="/content/dam/company-intranet"/>
+	<filter root="/etc/blueprints/company-intranet"/>
 </workspaceFilter>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cugEnabled="true"
+        cq:cugPrincipals="company-cug"
+        cq:lastModified="{Date}2017-06-29T16:29:16.756+01:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2017-06-29T16:29:45.069+01:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastRolledout="{Date}2017-06-29T16:28:40.123+01:00"
+        cq:lastRolledoutBy="admin"
+        cq:propertyInheritanceCancelled="[cq:cugEnabled,cq:cugPrincipals]"
+        cq:template="/apps/company-intranet/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:PropertyLiveSyncCancelled,mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Profile1"
+        jcr:uuid="ea56bb49-d440-48a3-a3fe-e415b5dc71d5"
+        sling:resourceType="company-intranet/components/pages/content-page">
+        <image
+            jcr:lastModified="{Date}2017-06-29T16:29:16.753+01:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+</jcr:root>

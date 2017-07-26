@@ -94,9 +94,9 @@ The purpose is to explore and demonstrate certain development strategies involvi
 		3. Includes: /apps/company-intranet/components/pages/base-page/base-page.html includes /apps/company-commons/utils/seo/meta.html
 		
 		
-	- XML Sitemap generator (using ACS AEM Commons)
+- XML Sitemap generator (using ACS AEM Commons)
 	
-	http://local.us.company.net/en.sitemap.xml
+	http://local.us.company.net/sitemap.xml
 	
 	- Configurations: /apps/company-intranet/config.publish/com.adobe.acs.commons.wcm.impl.SiteMapServlet...
 	

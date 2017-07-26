@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.company.aem.commons.core.config.impl.MultiConfigServiceImpl">
+        <implementation class="com.company.aem.commons.core.config.impl.MultiConfigServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.company.aem.commons.core.config.MultiConfigService"/>
+        </service>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.company.aem.commons.core.config.impl.MultiConfigServiceImpl"/>
+        <reference name="FactoryConfigService" interface="com.company.aem.commons.core.config.FactoryConfigService" cardinality="0..n" policy="dynamic" bind="bindFactoryConfigService" unbind="unbindFactoryConfigService"/>
+    </scr:component>
+</components>

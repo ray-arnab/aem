@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/company-commons">
+        <exclude pattern="/apps/company-commons/install" />
+    </filter>
+    
+    <filter root="/apps/sling" />
+    
+    <filter root="/etc/designs/company-commons"/>
+    
+    <!-- System users -->
+    <filter root="/home/users/system/company">
+        <exclude pattern="/home/users/system/company/.*/.tokens"/>
+    </filter>
+    
+</workspaceFilter>

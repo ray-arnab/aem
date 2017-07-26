@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/company-intranet">
+        <exclude pattern="/apps/company-intranet/install" />
+    </filter>
+    <!-- 
+    <filter root="/apps/sling" />
+     -->
+    <filter root="/etc/designs/company-intranet"/>
+</workspaceFilter>

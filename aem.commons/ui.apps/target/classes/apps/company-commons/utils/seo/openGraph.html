@@ -1,0 +1,11 @@
+<sly data-sly-use.ogModel="com.company.aem.commons.core.models.SEOOpenGraphModel" data-sly-test="${ogModel && ogModel.enabled}">
+
+    <meta property="og:title" content="${ogModel.title}" />					
+    <meta property="og:description" content="${ogModel.description}" />    
+    <meta property="og:type" content="${ogModel.type}"/>	
+    <meta property="og:site_name" content="${ogModel.siteName}" />			
+    <meta property="og:url" content="${ogModel.url}" />
+    <meta property="og:image" content="${ogModel.imgUrl}" />
+    <meta property="og:locale" content="${ogModel.locale}" />	
+
+	</sly>

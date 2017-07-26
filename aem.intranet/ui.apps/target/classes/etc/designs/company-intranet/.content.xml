@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-06-24T18:41:51.778+01:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Company Intranet Design"
+        sling:resourceType="wcm/core/components/designer">
+        <home-page jcr:primaryType="nt:unstructured">
+            <grid
+                jcr:lastModified="{Date}2017-06-23T16:05:11.319+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="group:General"/>
+            <ipar-header
+                jcr:lastModified="{Date}2017-06-23T16:42:01.974+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </ipar-header>
+        </home-page>
+        <category-page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2017-06-23T17:00:40.266+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </category-page>
+        <content-page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2017-06-24T18:41:51.771+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </content-page>
+    </jcr:content>
+    <clientlib-all/>
+    <clientlib-site/>
+    <favicon.ico/>
+</jcr:root>

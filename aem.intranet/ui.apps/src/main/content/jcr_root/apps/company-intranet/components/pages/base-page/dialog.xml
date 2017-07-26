@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="{Long}500"
+    stateful="false"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <basic
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/wcm/foundation/components/page/dialog/items/tabs/items/basic.infinity.json"
+                    xtype="cqinclude"/>
+                <advanced
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/wcm/foundation/components/page/dialog/items/tabs/items/advanced.infinity.json"
+                    xtype="cqinclude"/>
+                <image
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/wcm/foundation/components/page/dialog/items/tabs/items/image.infinity.json"
+                    xtype="cqinclude"/>
+                <cloudservices
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/wcm/foundation/components/page/dialog/items/tabs/items/cloudservices.infinity.json"
+                    xtype="cqinclude"/>
+                <blueprint
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/wcm/foundation/components/page/dialog/items/tabs/items/blueprint.infinity.json"
+                    xtype="cqinclude"/>
+                <livecopy
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/wcm/foundation/components/page/dialog/items/tabs/items/livecopy.infinity.json"
+                    xtype="cqinclude"/>
+                <errorpages
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/company-intranet/components/pages/base-page/tab_ErrorPages.infinity.json"
+                    xtype="cqinclude"/>
+                <seo
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/company-commons/components/structure/page/tab_SEO.infinity.json"
+                    xtype="cqinclude"/>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

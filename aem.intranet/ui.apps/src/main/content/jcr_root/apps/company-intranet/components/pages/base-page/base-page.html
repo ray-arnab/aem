@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <sly data-sly-include="head.html"/>
+        <sly data-sly-include="customheaderlibs.html"/>
+
+        <sly data-sly-include="/apps/company-commons/utils/seo/meta.html"/>
+
+    </head>
+    <body class="page ${currentPage.template.name}">
+    	<sly data-sly-resource="${@path='clientcontext', resourceType='cq/personalization/components/clientcontext'}"/>
+		<sly data-sly-include="body.html"/>
+    	<sly data-sly-include="customfooterlibs.html"/>
+        <sly data-sly-resource="${@ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}"/>
+    </body>
+</html>

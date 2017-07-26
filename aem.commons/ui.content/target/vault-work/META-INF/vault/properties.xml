@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Company Commons - UI content</comment>
+<entry key="createdBy">aray5</entry>
+<entry key="name">aem.commons.ui.content</entry>
+<entry key="created">2017-07-26T14:05:28.584+0100</entry>
+<entry key="groupId">com.company</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">Company Commons Content Package</entry>
+<entry key="description">UI content package for Company Commons</entry>
+<entry key="artifactId">aem.commons.ui.content</entry>
+<entry key="path">/etc/packages/Company Commons Content Package/aem.commons.ui.content.zip</entry>
+</properties>

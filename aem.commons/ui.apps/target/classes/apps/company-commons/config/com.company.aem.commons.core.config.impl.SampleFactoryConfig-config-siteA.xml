@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    company.commons.sample.contentPrefix="/content/siteA"
+    company.commons.sample.countryLevel="{Long}1"
+    company.commons.sample.damPrefix="/content/dam/siteA"
+    company.commons.sample.id="siteA"
+    company.commons.sample.languageLevel="{Long}2"
+    config-service-name="sample-factory-config"/>

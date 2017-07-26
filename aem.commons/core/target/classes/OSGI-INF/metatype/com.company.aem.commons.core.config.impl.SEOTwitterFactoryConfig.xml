@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig">
+    <OCD id="com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig" name="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.name" description="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.description">
+        <AD id="webconsole.configurationFactory.nameHint" type="String" default="Factory\ Item:\ {company.seo.twitter.id}" name="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.webconsole.configurationFactory.nameHint.name" description="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.webconsole.configurationFactory.nameHint.description"/>
+        <AD id="company.seo.twitter.id" type="String" default="company-commons" name="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.id.name" description="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.id.description"/>
+        <AD id="company.seo.twitter.enabled" type="Boolean" default="true" name="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.enabled.name" description="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.enabled.description"/>
+        <AD id="company.seo.twitter.site" type="String" default="" name="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.site.name" description="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.site.description"/>
+        <AD id="company.seo.twitter.card" type="String" default="summary" name="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.card.name" description="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.card.description"/>
+        <AD id="company.seo.twitter.imageUrl" type="String" default="" name="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.imageUrl.name" description="%com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig.company.seo.twitter.imageUrl.description"/>
+    </OCD>
+    <Designate pid="com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig" factoryPid="com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig">
+        <Object ocdref="com.company.aem.commons.core.config.impl.SEOTwitterFactoryConfig"/>
+    </Designate>
+</metatype:MetaData>

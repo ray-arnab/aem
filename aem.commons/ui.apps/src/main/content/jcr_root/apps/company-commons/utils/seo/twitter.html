@@ -1,0 +1,10 @@
+<sly data-sly-use.twModel="com.company.aem.commons.core.models.SEOTwitterModel" data-sly-test="${twModel && twModel.enabled}">
+
+    <meta property="twitter:title" content="${twModel.title}" />		
+    <meta property="twitter:description" content="${twModel.description}" />
+    <meta property="twitter:card" content="${twModel.card}" />
+    <meta property="twitter:site" content="${twModel.site}" />			
+    <meta property="twitter:image" content="${twModel.imageUrl}" />
+    <meta property="twitter:url" content="${twModel.url}" />
+
+</sly>

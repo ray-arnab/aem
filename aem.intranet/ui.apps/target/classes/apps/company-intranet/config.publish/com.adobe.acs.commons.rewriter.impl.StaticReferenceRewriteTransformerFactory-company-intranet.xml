@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    attributes="[img:src,link:href,script:src]"
+    host.count="{Long}2"
+    host.pattern="static{}.company.net"
+    pipeline.type="static-refs"
+    prefixes="[/etc/designs/company-intranet,/content/dam/company-intranet]"/>

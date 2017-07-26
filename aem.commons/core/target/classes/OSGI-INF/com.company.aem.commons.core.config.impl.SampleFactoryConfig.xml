@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.company.aem.commons.core.config.impl.SampleFactoryConfig" configuration-policy="require" activate="activate">
+        <implementation class="com.company.aem.commons.core.config.impl.SampleFactoryConfig"/>
+        <service servicefactory="false">
+            <provide interface="com.company.aem.commons.core.config.FactoryConfigService"/>
+        </service>
+        <property name="config-service-name" value="sample-factory-config"/>
+        <property name="webconsole.configurationFactory.nameHint" value="Factory Item: {company.commons.sample.id}"/>
+        <property name="company.commons.sample.id" value="siteA"/>
+        <property name="company.commons.sample.contentPrefix" value="/content/siteA"/>
+        <property name="company.commons.sample.damPrefix" value="/content/dam/siteA"/>
+        <property name="company.commons.sample.countryLevel" type="Integer" value="1"/>
+        <property name="company.commons.sample.languageLevel" type="Integer" value="2"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.company.aem.commons.core.config.impl.SampleFactoryConfig"/>
+    </scr:component>
+</components>

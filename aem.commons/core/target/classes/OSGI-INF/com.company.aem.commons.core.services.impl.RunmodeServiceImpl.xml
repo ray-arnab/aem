@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component immediate="true" name="com.company.aem.commons.core.services.impl.RunmodeServiceImpl">
+        <implementation class="com.company.aem.commons.core.services.impl.RunmodeServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.company.aem.commons.core.services.RunmodeService"/>
+        </service>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.company.aem.commons.core.services.impl.RunmodeServiceImpl"/>
+        <reference name="runmode" interface="org.apache.sling.runmode.RunMode" cardinality="1..1" policy="static" bind="bindRunmode" unbind="unbindRunmode"/>
+    </scr:component>
+</components>

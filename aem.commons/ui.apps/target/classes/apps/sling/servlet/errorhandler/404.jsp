@@ -1,0 +1,4 @@
+<%@page session="false"%><%
+%><%@include file="/apps/acs-commons/components/utilities/errorpagehandler/404.jsp" %>
+
+<cq:include path="par-error" resourceType="foundation/components/parsys" />

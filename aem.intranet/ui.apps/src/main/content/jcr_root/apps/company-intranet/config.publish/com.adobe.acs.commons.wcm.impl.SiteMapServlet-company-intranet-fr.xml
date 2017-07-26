@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    changefreq.properties="seo.xmlsitemap.frequency"
+    character.encoding="UTF-8"
+    exclude.property="seo.xmlsitemap.exclude"
+    externalizer.domain="Intranet-FR"
+    include.inherit="{Boolean}true"
+    include.lastmod="{Boolean}true"
+    priority.properties="seo.xmlsitemap.priority"
+    sling.servlet.resourceTypes="[company-intranet/components/pages/base-page,company-intranet/components/pages/home-page]"/>

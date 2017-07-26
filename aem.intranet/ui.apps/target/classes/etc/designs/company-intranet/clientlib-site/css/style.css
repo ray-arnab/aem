@@ -1,0 +1,16 @@
+.page {
+	background-color: rgb(255,255,255);
+}       
+.page-header{
+    border: 2px solid red;
+}
+.page-footer{
+    border: 2px solid green;
+}
+.page-content{
+    /*border: 2px solid blue;*/
+    max-width: 960px;
+    margin: auto;
+    background-color: rgb(245,245,245);
+    padding: 5px;
+}

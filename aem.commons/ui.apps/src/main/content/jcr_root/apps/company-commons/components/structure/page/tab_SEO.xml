@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="SEO">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <xmlSiteMap
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="XML Site map"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <exclude
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="To exclude this page from sitemap please select the checkbox. This will not affect the inclusion/exclusion of child pages."
+                    fieldLabel="Exclude in sitemap"
+                    name="./seo.xmlsitemap.exclude"
+                    type="checkbox"
+                    xtype="selection"/>
+                <frequency
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Change frequency. Leave blank to inherit from parent pages."
+                    fieldLabel="Change frequency"
+                    name="./seo.xmlsitemap.frequency"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <daily
+                            jcr:primaryType="nt:unstructured"
+                            text="Daily"
+                            value="daily"/>
+                        <monthly
+                            jcr:primaryType="nt:unstructured"
+                            text="Monthly"
+                            value="monthly"/>
+                    </options>
+                </frequency>
+                <priority
+                    jcr:primaryType="cq:Widget"
+                    allowNegative="{Boolean}false"
+                    fieldDescription="Priority (Eg: 0.5). Leave blank to inherit from parent pages."
+                    fieldLabel="Priority"
+                    name="./seo.xmlsitemap.priority"
+                    xtype="numberfield"/>
+            </items>
+        </xmlSiteMap>
+        <metaRobots
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="Meta Robots"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <content
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank to inherit from site root. System default will apply if not configured in the hierarchy."
+                    fieldLabel="Meta content"
+                    name="./seo.meta.robots.content"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <noindex-nofollow
+                            jcr:primaryType="cq:Widget"
+                            text="noindex, nofollow"
+                            value="noindex, nofollow"/>
+                        <noindex-follow
+                            jcr:primaryType="cq:Widget"
+                            text="noindex, follow"
+                            value="noindex, follow"/>
+                        <index-nofollow
+                            jcr:primaryType="cq:Widget"
+                            text="index, nofollow"
+                            value="index, nofollow"/>
+                        <index-follow
+                            jcr:primaryType="cq:Widget"
+                            text="index, follow"
+                            value="index, follow"/>
+                    </options>
+                </content>
+            </items>
+        </metaRobots>
+        <canonical
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="Canonical"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <canonical
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank to mark the current page as its own canonical. Otherwise point to an alternate intra-CMS page or type in the URL."
+                    fieldLabel="Canonical"
+                    name="./seo.link.canonical"
+                    xtype="pathfield"/>
+            </items>
+        </canonical>
+        <twitterCard
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="Twitter Card"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <card
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank to inherit default (Eg: summary or summary_large_image)"
+                    fieldLabel="Card"
+                    name="./seo.meta.twitter.card"
+                    xtype="textfield"/>
+                <site
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank to inherit default (Eg: @CompanyName)"
+                    fieldLabel="Site"
+                    name="./seo.meta.twitter.site"
+                    xtype="textfield"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank for page title to take effect"
+                    fieldLabel="Title"
+                    name="./seo.meta.twitter.title"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank for page description to take effect"
+                    fieldLabel="Description"
+                    name="./seo.meta.twitter.description"
+                    xtype="textfield"/>
+            </items>
+        </twitterCard>
+        <openGraph
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="Open Graph"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank to inherit default (Eg: website)"
+                    fieldLabel="Type"
+                    name="./seo.meta.og.type"
+                    xtype="textfield"/>
+                <site
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank to inherit default (Eg: Company Name)"
+                    fieldLabel="Site Name"
+                    name="./seo.meta.og.site"
+                    xtype="textfield"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank for page title to take effect"
+                    fieldLabel="Title"
+                    name="./seo.meta.og.title"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave blank for page description to take effect"
+                    fieldLabel="Description"
+                    name="./seo.meta.og.description"
+                    xtype="textfield"/>
+            </items>
+        </openGraph>
+    </items>
+</jcr:root>

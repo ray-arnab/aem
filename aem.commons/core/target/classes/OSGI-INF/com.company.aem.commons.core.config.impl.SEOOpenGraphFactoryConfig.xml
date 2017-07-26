@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig" configuration-policy="require" activate="activate">
+        <implementation class="com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig"/>
+        <service servicefactory="false">
+            <provide interface="com.company.aem.commons.core.config.FactoryConfigService"/>
+        </service>
+        <property name="config-service-name" value="seo-opengraph-factory-config"/>
+        <property name="webconsole.configurationFactory.nameHint" value="Factory Item: {company.seo.opengraph.id}"/>
+        <property name="company.seo.opengraph.id" value="company-commons"/>
+        <property name="company.seo.opengraph.enabled" type="Boolean" value="true"/>
+        <property name="company.seo.opengraph.siteName" value=""/>
+        <property name="company.seo.opengraph.type" value="website"/>
+        <property name="company.seo.opengraph.imageUrl" value=""/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig"/>
+    </scr:component>
+</components>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.company.aem.commons.core.config.impl.SEORobotsConfig">
+    <OCD id="com.company.aem.commons.core.config.impl.SEORobotsConfig" name="%com.company.aem.commons.core.config.impl.SEORobotsConfig.name" description="%com.company.aem.commons.core.config.impl.SEORobotsConfig.description">
+        <AD id="webconsole.configurationFactory.nameHint" type="String" default="Factory\ Item:\ {company.seo.robots.id}" name="%com.company.aem.commons.core.config.impl.SEORobotsConfig.webconsole.configurationFactory.nameHint.name" description="%com.company.aem.commons.core.config.impl.SEORobotsConfig.webconsole.configurationFactory.nameHint.description"/>
+        <AD id="company.seo.robots.id" type="String" default="company-commons" name="%com.company.aem.commons.core.config.impl.SEORobotsConfig.company.seo.robots.id.name" description="%com.company.aem.commons.core.config.impl.SEORobotsConfig.company.seo.robots.id.description"/>
+        <AD id="company.seo.robots.enabled" type="Boolean" default="true" name="%com.company.aem.commons.core.config.impl.SEORobotsConfig.company.seo.robots.enabled.name" description="%com.company.aem.commons.core.config.impl.SEORobotsConfig.company.seo.robots.enabled.description"/>
+    </OCD>
+    <Designate pid="com.company.aem.commons.core.config.impl.SEORobotsConfig" factoryPid="com.company.aem.commons.core.config.impl.SEORobotsConfig">
+        <Object ocdref="com.company.aem.commons.core.config.impl.SEORobotsConfig"/>
+    </Designate>
+</metatype:MetaData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig">
+    <OCD id="com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig" name="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.name" description="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.description">
+        <AD id="webconsole.configurationFactory.nameHint" type="String" default="Factory\ Item:\ {company.seo.opengraph.id}" name="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.webconsole.configurationFactory.nameHint.name" description="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.webconsole.configurationFactory.nameHint.description"/>
+        <AD id="company.seo.opengraph.id" type="String" default="company-commons" name="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.id.name" description="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.id.description"/>
+        <AD id="company.seo.opengraph.enabled" type="Boolean" default="true" name="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.enabled.name" description="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.enabled.description"/>
+        <AD id="company.seo.opengraph.siteName" type="String" default="" name="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.siteName.name" description="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.siteName.description"/>
+        <AD id="company.seo.opengraph.type" type="String" default="website" name="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.type.name" description="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.type.description"/>
+        <AD id="company.seo.opengraph.imageUrl" type="String" default="" name="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.imageUrl.name" description="%com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig.company.seo.opengraph.imageUrl.description"/>
+    </OCD>
+    <Designate pid="com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig" factoryPid="com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig">
+        <Object ocdref="com.company.aem.commons.core.config.impl.SEOOpenGraphFactoryConfig"/>
+    </Designate>
+</metatype:MetaData>

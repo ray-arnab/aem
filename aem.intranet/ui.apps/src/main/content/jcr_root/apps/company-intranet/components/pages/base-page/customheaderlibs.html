@@ -1,0 +1,12 @@
+<!--/* Include the site client libraries (loading only the CSS in the header, JS will be loaded in the footer) */-->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.css @ categories='company-intranet.all'}"/>
+
+<!--/* Include Adobe Dynamic Tag Management libraries for the header */-->
+<!--/*
+<div data-sly-resource="${@path='config', resourceType='cq/personalization/components/clientcontext_optimized/config'}"></div>
+<div data-sly-resource="${@path='contexthub', resourceType='granite/contexthub/components/contexthub'}"></div>
+<sly data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>
+*/-->
+
+<!--/* Initializes the Experience Manager authoring UI */-->
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp"/>

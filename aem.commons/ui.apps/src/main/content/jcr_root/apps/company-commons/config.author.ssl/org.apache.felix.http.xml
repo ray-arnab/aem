@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    org.apache.felix.https.enable="{Boolean}true"
+    org.apache.felix.https.keystore="D:\\AEM6_1\\author\\keystore.jks"
+    org.apache.felix.https.keystore.key="selfsigned"
+    org.apache.felix.https.keystore.key.password="password"
+    org.apache.felix.https.keystore.password="password"
+    org.apache.felix.https.nio="{Boolean}true"
+    org.osgi.service.http.port.secure="{Long}5433"/>

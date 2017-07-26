@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="com.company.aem.commons.core.config.impl.SEORobotsConfig" configuration-policy="require" activate="activate">
+        <implementation class="com.company.aem.commons.core.config.impl.SEORobotsConfig"/>
+        <service servicefactory="false">
+            <provide interface="com.company.aem.commons.core.config.FactoryConfigService"/>
+        </service>
+        <property name="config-service-name" value="seo-robots-factory-config"/>
+        <property name="webconsole.configurationFactory.nameHint" value="Factory Item: {company.seo.robots.id}"/>
+        <property name="company.seo.robots.id" value="company-commons"/>
+        <property name="company.seo.robots.enabled" type="Boolean" value="true"/>
+        <property name="service.vendor" value="Adobe"/>
+        <property name="service.pid" value="com.company.aem.commons.core.config.impl.SEORobotsConfig"/>
+    </scr:component>
+</components>

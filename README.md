@@ -9,19 +9,19 @@ The purpose is to explore and demonstrate certain development strategies involvi
 
 - Project setup for multi-project / multi tenant situation
 
--- company-commons : project to hold common funcitonality
+	-- company-commons : project to hold common funcitonality
 
---- basic components
+		--- basic components
 
---- basic functionality (eg: CheckPermissionServlet, MailService with attachments, AliasPropertyListener, any other instance specific housekeeping)
+		--- basic functionality (eg: CheckPermissionServlet, MailService with attachments, AliasPropertyListener, any other instance specific housekeeping)
 
---- configurations that apply on whole instance (eg: Externalizer, ServiceUserMapper, JcrResourceResolverFactory)
+		--- configurations that apply on whole instance (eg: Externalizer, ServiceUserMapper, JcrResourceResolverFactory)
 
--- company-intranet : holds project specific funcitonality for a given site/brand
+	-- company-intranet : holds project specific funcitonality for a given site/brand
 
---- specialized page templates
+		--- specialized page templates
 
---- factory configurations that can be project specific (eg: Logger)
+		--- factory configurations that can be project specific (eg: Logger)
 	
 	
 - Content hierarchy
@@ -39,10 +39,10 @@ The purpose is to explore and demonstrate certain development strategies involvi
 						/404			... error-page
 						/default		... error-page
 				/fr							[live copy/language copy of 'en']
-			/us								[live copy for blueprint]		
+			/us								[live copy from blueprint]		
 				/en							{externalizes local.us.company.net/en/}
 					...
-			/fr								[live copy for blueprint]
+			/fr								[live copy from blueprint]
 				/en							{externalizes local.fr.company.net/en/}
 					...
 				/fr							{externalizes local.fr.company.net/fr/}	
@@ -58,60 +58,60 @@ The purpose is to explore and demonstrate certain development strategies involvi
 
 - Versioned clientlibs for the intranet website (using ACS AEM commons)
 
--- /apps/company-intranet/config/rewriter
+	-- /apps/company-intranet/config/rewriter
 
 
 - Embedded clientlibs for the intranet website
 
--- /etc/designs/company-intranet/clientlib-all
+	-- /etc/designs/company-intranet/clientlib-all
 
 
 - SEO module in company-commons
  
--- A separate page property tab for SEO
+	-- A separate page property tab for SEO
 	/apps/company-commons/components/structure/page/tab_SEO
 
---- whether page is excluded in xml sitemap
+		--- whether page is excluded in xml sitemap
 
---- meta opengraph props that should apply on page
+		--- meta opengraph props that should apply on page
 
---- meta twitter props that should apply on page
+		--- meta twitter props that should apply on page
 
---- meta robots props that shuld apply on page
+		--- meta robots props that shuld apply on page
 		
 
--- Corresponding models and sightly to inject markup
+	-- Corresponding models and sightly to inject markup
 	/apps/company-commons/utils/seo
 	
--- Usage in company-intranet
+	-- Usage in company-intranet
 
---- Configurations : /apps/company-intranet/config.dev/com.company.aem.commons.core.config.impl.SEO...	
+		--- Configurations : /apps/company-intranet/config.dev/com.company.aem.commons.core.config.impl.SEO...	
 
---- Page dialog: /apps/company-intranet/components/pages/base-page/dialog/items/tabs/items/seo
+		--- Page dialog: /apps/company-intranet/components/pages/base-page/dialog/items/tabs/items/seo
 
---- Includes: /apps/company-intranet/components/pages/base-page/base-page.html includes /apps/company-commons/utils/seo/meta.html
+		--- Includes: /apps/company-intranet/components/pages/base-page/base-page.html includes /apps/company-commons/utils/seo/meta.html
 		
 		
-- XML Sitemap generator (using ACS AEM Commons)
+	- XML Sitemap generator (using ACS AEM Commons)
 	http://local.us.company.net/en.sitemap.xml
 	
--- Configurations: /apps/company-intranet/config.publish/com.adobe.acs.commons.wcm.impl.SiteMapServlet...
+	-- Configurations: /apps/company-intranet/config.publish/com.adobe.acs.commons.wcm.impl.SiteMapServlet...
 	
 	
 
 - URL externalization (local env)
 	Used regex based mappings in /apps/company-commons/config.publish/org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
 	
--- /content/company-intranet/XX -> local.XX.company.net
--- replace .html with trailing slash
+	-- /content/company-intranet/XX -> local.XX.company.net
+	-- replace .html with trailing slash
 	
 	
 - Static domains for designs and assets (using ACS AEM Commons)
--- /apps/company-intranet/config.publish/com.adobe.acs.commons.rewriter.impl.StaticReferenceRewriteTransformerFactory-company-intranet
+	-- /apps/company-intranet/config.publish/com.adobe.acs.commons.rewriter.impl.StaticReferenceRewriteTransformerFactory-company-intranet
 
 	
 - Sling Dynamic Include
--- remove dispatcher caching of certain components in a page
+	-- remove dispatcher caching of certain components in a page
 	
 
 - Apache configuration artefacts to support the intranet website

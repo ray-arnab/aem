@@ -1,0 +1,11 @@
+# Each farm configures a set of load balanced renders (i.e. remote servers)
+/farms
+  {
+#  $include "dispatcher_farm_company_protected.any"
+  
+  $include "dispatcher_farm_company_intranet.any"
+  $include "dispatcher_farm_company_intranet_protected.any"
+  
+  $include "dispatcher_farm_company_spa.any"
+  
+  }

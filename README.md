@@ -122,3 +122,9 @@ The purpose is to explore and demonstrate certain development strategies involvi
 	
 
 - Apache configuration artefacts to support the intranet website
+
+
+## Dependencies
+
+- install bundle : org.apache.sling.dynamic-include-3.0.0.jar 
+- install package : acs-aem-commons-content-2.12.0-min.zip

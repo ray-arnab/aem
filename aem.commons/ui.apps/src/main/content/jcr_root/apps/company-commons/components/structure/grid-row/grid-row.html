@@ -1,0 +1,18 @@
+<div class="container-fluid">
+	---- Start of Grid row -----
+	<div class="row" data-sly-use.rowModel="com.company.aem.commons.core.models.GridRowModel" 
+    			data-sly-list.column="${rowModel.colClassStrings}"> 
+
+
+        <sly data-sly-test.colPath="${'{0}{1}' @ format=['par-col-', columnList.index]}"/>
+
+        <!--/* Each 'column' here is a column class string */-->
+        <div class="${column}">
+        	<div data-sly-resource="${@path=colPath, resourceType='wcm/foundation/components/parsys'}"></div>
+			${colPath}, ${column}
+        </div>
+
+
+	</div>    
+    ---- End of Grid row -----
+</div>
